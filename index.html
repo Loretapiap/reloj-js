@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <title>Hora según Zona Horaria</title>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <link href="css/reloj.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+</head>
+<div class="contentclock col-xs-12 xol-sm-12 hidden-lg hidden-md" id="contentclock">
+    <div class="ventana" id="ventana">
+        <div class="vt">
+        <div class="cerrar"><a href="javascript:closeVentana();">Cerrar x</a></div>
+        <div class="marcador">
+            <input id="tachado" class="check one" type="checkbox" value="checkbox"  onclick="tachard(this)">Chicago</input>
+            <br>
+            <input id="tachado" class="check two" type="checkbox" value="checkbox"  onclick="tacharb(this)">Sao Paulo</input>
+            <br>
+            <input id="tachado" class="check three" type="checkbox" value="checkbox"  onclick="tacharc(this)">Madrid</input>
+            <br>
+            <input id="tachado" class="check four" type="checkbox" value="checkbox"  onclick="tachar(this)">México D.F</input>
+            <br>
+            <input id="tachado" class="check five" type="checkbox" value="checkbox"  onclick="tachare(this)">Buenos Aires</input>
+            <br>
+            <input id="tachado" class="check ten" type="checkbox" value="checkbox"  onclick="tacharj(this)">Bogota</input>
+        </div>
+        </div>
+    </div>
+    <p>Chile</p>
+    <p class="day" id="day"></p>
+    <div class="clock" id="clock">
+        <div class="date"></div>
+        <div class="time"></div>
+        <div class="day"></div>
+    </div>
+    
+    <button><a href="javascript:openVentana();">Otra zona</a></button>
+    <div class="new" id="new"></div>
+    <div class="special"></div>
+    <div class="specialb"></div>
+    <div class="specialc"></div>
+    <div class="speciald"></div>
+    <div class="speciale"></div>   
+    <div class="specialj"></div>
+</div>
+    
+    <script type="text/javascript" src="js/reloj.js"></script>
+</html>
+
+        
